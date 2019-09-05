@@ -1,0 +1,88 @@
+.remark-slide {
+  background-image: url(https://www.hs-osnabrueck.de/fileadmin/_processed_/e/5/csm_KBM07344_HS_Osnabrueck_Logo_ROSE_c2c586db0b.png);
+	background-position: center bottom;
+	background-size: 33%;
+	border-bottom: 0px solid  #522D80;
+	box-shadow:  0 55px 0 #fff;
+  background-color:white;
+}
+
+a, a > code {
+  color: rgb(41, 0, 255);
+  text-decoration: none;
+}
+
+.center-text{
+  text-position: center;
+}
+
+.small{
+  font-size=50%;
+}
+.large { 
+  font-size: 180%;
+}
+
+.large-code { 
+  font-size: 230%;
+  font-family:'Source Code Pro';
+}
+
+.very-large {
+  font-size:300%;
+}
+
+.code{
+  font-family:'Source Code Pro';
+}
+
+.small-code { 
+  font-size: 130%;
+  font-family:'Source Code Pro';
+}
+
+.code-blue{color:rgb(92, 194, 252)}
+.code-orange{color:rgb(250, 145, 38)}
+.code-green{color:rgb(101, 215, 68)}
+
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(2n) {
+	background:none; 
+}
+
+.remark-slide table {
+	margin: auto;
+	border-top: 0 solid #666;
+	border-bottom: 0 solid #666;
+}
+
+.remark-slide-content:after {
+    position: center;
+    bottom: 5px;
+    right: 35px;
+    height: 40px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/logo-hs-os-kompakt.jpg");
+}
+
+.black {
+  color: #000000;
+}
+.red {
+  color:#cc0000;
+}
+
+.green {
+  color: green;
+}
+.remark-inline-code  {
+  color:#cc0000;
+}
+
+.pull-left-wide{
+  float: left;
+  font-size:70%;
+  width: 80%;
+  display: inline-block;
+}
