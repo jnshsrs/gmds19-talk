@@ -16,7 +16,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-
 ```{r setup, include=FALSE}
 
 options(htmltools.dir.version = FALSE)
@@ -40,6 +39,8 @@ layout: false
 
 # In the upcoming minutes...
 
+.pull-right[
+
 ## What to expect
 
 - Present the past developments of RIS and PACS uptake
@@ -48,15 +49,15 @@ layout: false
 
 - Present the predicted uptake of RIS and PACS in 2020
 
-## What not to expect
+]
 
-- A complete description of Bayesian Methods 
+.qrcode[
+<img src="img/gmds19-talk-qrcode.png" alt="LOGO HSOS" height="200", width="200">
+]
 
-- A complete description of Bayesian Bass Modell
-
-
+.bottom[
 .large[.red[!] A detailled description and an implementation for R can be found on [github]() `r icon::fa("github")`]
-
+]
 ---
 
 layout: false
@@ -73,15 +74,15 @@ layout: false
 library(s1302itr)
 
 haven::read_sav("~/Downloads/CIO_Final_D.sav") %>% 
-  select(LBV1SQ001) %>% 
-  mutate_at("LBV1SQ001", relabel_spss_variable) %>% 
-  group_by(LBV1SQ001) %>% 
+  select(LBV1SQ003) %>% 
+  mutate_at("LBV1SQ003", relabel_spss_variable) %>% 
+  group_by(LBV1SQ003) %>% 
   count() %>% 
-  filter(!is.na(LBV1SQ001)) %>% 
+  filter(!is.na(LBV1SQ003)) %>% 
   ungroup() %>% 
   mutate(nn = sum(n)) %>% 
   mutate(prop = n / nn) %>% 
-  rename(response = LBV1SQ001) %>% 
+  rename(response = LBV1SQ003) %>% 
   plot_singlebar() +
   ggtitle("Adoption of PACS in 2016") +
   scale_y_continuous(labels = scales::percent, limits = 0:1, breaks = seq(0, 1, by = .2)) +
@@ -121,7 +122,32 @@ read_csv2("data/aha_data.csv") %>%
 
 # RIS and PACS
 
+.pull-left[
+.large[
 
+### Past
+
+- Radiology is a innovation-friendly and IT savvy medical domain
+
+- RIS and PACS were among the first IT-systems in hospitals
+
+- RIS and PACS are widely accepted and utilized
+
+]
+]
+
+.pull-right[
+.large[
+
+## Present and Future
+
+- Radiology is expected to witness profund disruptions 
+
+- AI applications support the diagnostic decision making processes
+
+- AI starts to outperform human capabilites e.g. detect cancer from X-rays
+]
+]
 
 ---
 
@@ -229,7 +255,7 @@ layout: true
 ---
 layout: false
 
-# Outlook
+# Review of Findings
 
 - We published a similar analysis in of EHR diffusion dynamics in the International Journal of Medical Informatics (non-bayesian analysis)
 
@@ -262,18 +288,21 @@ layout: true
 
 - Higher innovation coefficient with RIS and higher Imitation effect with PACS
 
-
 ---
 layout: false
 
 background-image: url(../img/logo-hs-os-kompakt.jpg), url(../img/logo-it-report.png);
+
+.qrcode[
+<img src="img/gmds19-talk-qrcode.png" alt="LOGO HSOS" height="200", width="200">
+]
 
 .center[
 
 .very-large[Use Bayesian Statistics for your Data Analysis]
 <br/>
 .very-large[`r emo::ji("blush")`]
-
+.
 
 <a href="mailto:j.huesers@hs-osnabrueck.de">
 .black[`r icon::fa("paper-plane")` j.huesers@hs-osnabrueck.de]
