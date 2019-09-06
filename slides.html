@@ -16,7 +16,7 @@
 class: center, middle, inverse, title-slide
 
 # Diffusion Dynamics of Radiology IT-Systems in German Hospitals
-## A Bayesian Bass Model
+## A Bayesian Bass Diffusion Model
 ### Jens HÜSERS, Moritz ESDAR, Jan-Patrick WEIß and Ursula HÜBNER
 ### GMDS 2019 - Dortmund
 
@@ -80,9 +80,9 @@ layout: false
 .pull-left[
 .large[
 
-### Past
+## Past
 
-- Radiology is a innovation-friendly and IT savvy medical domain
+- Radiology is an innovation-friendly and IT savvy medical domain
 
 - RIS and PACS were among the first IT-systems in hospitals
 
@@ -94,11 +94,11 @@ layout: false
 .pull-right[
 .large[
 
-## Present and Future
+## Future
 
 - Radiology is expected to witness profund disruptions 
 
-- AI applications support the diagnostic decision making processes
+- AI applications support the diagnostic decision making processes in Radiology
 
 - AI starts to outperform human capabilites e.g. detect cancer from X-rays
 ]
@@ -122,7 +122,7 @@ background-position: center
 
 ---
 
-# Bass Model
+# Bass Diffusion Model
 
 &lt;iframe src="https://jnshsrs.shinyapps.io/bass-coeficients/" 
 name="iframe1" id="iframe1"
@@ -141,7 +141,7 @@ style="border-style: none; width: 100%; height: 800px;"&gt;&lt;/iframe&gt;
 ]
 ]
 
-.bottom[The Bayesian Bass Model provides a complete probability distribution of the model parameters.]
+.bottom[The Bayesian Bass Diffusion Model provides a complete probability distribution of the model parameters.]
 
 --
 
@@ -171,22 +171,43 @@ style="border-style: none; width: 100%; height: 800px;"&gt;&lt;/iframe&gt;
 .bottom[The figures show the diffusion process for a) RIS and b) PACS]
 
 ---
-layout: true
 
 # Results - Prediction of Adoption in 2020
 
 ![Prediction of hospital adoption rates for RIS and PACS](img/adoption-2020.png)
 
 ---
+
+# Headlines
+
+&lt;br/&gt;
+
+## We successfully combied the Bass Diffusion Model with Bayesian Statistics
+
+&lt;br/&gt;
+
+## RIS and PACS are expected to be implemented at least in 90% of German hospitals
+
+&lt;br/&gt;
+
+---
 layout: false
 
-# Review of Findings
+# Discussion of Findings
 
-- We published a similar analysis in of EHR diffusion dynamics in the International Journal of Medical Informatics (non-bayesian analysis)
+.large[
+- What are Innovation and Imitation Forces ...?
 
-- We used the very same data with a Bayesian modelling approach to benefit from a complete distribution of the adoption status
+- Deeper insights possible with longitudianal analysis and possibly more reliant, however data is harder to obtain.
 
-- First, we can use the Bayesian model to explain and compare diffusion curves and second, we can use the model to predict future adoption rates
+]
+&lt;hr&gt;
+
+- We made clear distinctions between RIS and PACS which starts being difficult (platform and cloud based architecture that merge functionalities).
+
+- Often top-down governmental actions are considered to drive uptake, thus lognitudinal analyis may offer insights needed to develop politicial strategies.
+
+- We published a similar analysis in of EHR diffusion dynamics in the International Journal of Medical Informatics
 
 ---
 layout: false
@@ -280,7 +301,7 @@ background-image: url(../img/logo-hs-os-kompakt.jpg), url(../img/logo-it-report.
 ]
 ]
 
-## Bass Model
+## Bass Diffusion Model
 
 .center[.large[
 `\(F(t) = 1 - \frac{e^{-(p + q)t}}{1 + \frac{q}{p}e^{-(p+q)t}}\)`
@@ -288,7 +309,7 @@ background-image: url(../img/logo-hs-os-kompakt.jpg), url(../img/logo-it-report.
 
 ---
 
-## Bayesian Bass Model - Bayesian Likelihood
+## Bayesian Bass Diffusion Model - Bayesian Likelihood
 
 
 ```r
