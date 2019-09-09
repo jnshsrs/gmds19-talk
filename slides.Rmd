@@ -43,8 +43,6 @@ layout: false
 
 ## What to expect
 
-- Present the past developments of RIS and PACS uptake
-
 - Showcase a Bayesian Bass Model which outlines the diffusion curve of RIS and PACS systems.
 
 - Present the predicted uptake of RIS and PACS in 2020
@@ -55,8 +53,8 @@ layout: false
 <img src="img/gmds19-talk-qrcode.png" alt="LOGO HSOS" height="200", width="200">
 ]
 
-.bottom[
-.large[.red[!] A detailled description and an implementation for R can be found on [github]() `r icon::fa("github")`]
+.bottom[ 
+  .large[.red[!] A detailled description and an implementation for R can be found on [github]() `r icon::fa("github")`] 
 ]
 ---
 
@@ -122,31 +120,14 @@ read_csv2("data/aha_data.csv") %>%
 
 # RIS and PACS
 
-.pull-left[
 .large[
-
-## Past
 
 - Radiology is an innovation-friendly and IT savvy medical domain
 
-- RIS and PACS were among the first IT-systems in hospitals
-
-- RIS and PACS are widely accepted and utilized
-
-]
-]
-
-.pull-right[
-.large[
-
-## Future
+- RIS and PACS were among the first IT-systems in hospitals and widely accepted
 
 - Radiology is expected to witness profund disruptions 
 
-- AI applications support the diagnostic decision making processes in Radiology
-
-- AI starts to outperform human capabilites e.g. detect cancer from X-rays
-]
 ]
 
 ---
@@ -244,6 +225,20 @@ bind_rows(
 ]
 
 .bottom[The figures show the diffusion process for a) RIS and b) PACS]
+---
+
+layout: false
+
+# Discussion of Findings
+
+.large[
+
+- RIS uptake correlated with EHR adoption 
+
+- PACS uptake may correlate with purchase of state-of-the-art modalities
+
+
+]
 
 ---
 
@@ -251,9 +246,11 @@ bind_rows(
 
 ![Prediction of hospital adoption rates for RIS and PACS](img/adoption-2020.png)
 
+
 ---
 
 # Headlines
+
 
 <br/>
 
@@ -261,28 +258,11 @@ bind_rows(
 
 <br/>
 
-## RIS and PACS are expected to be implemented at least in 90% of German hospitals
+## RIS and PACS are expected to be implemented at least in 90% of German hospitals in 2020
 
 <br/>
 
----
-layout: false
 
-# Discussion of Findings
-
-.large[
-- What are Innovation and Imitation Forces ...?
-
-- Deeper insights possible with longitudianal analysis and possibly more reliant, however data is harder to obtain.
-
-]
-<hr>
-
-- We made clear distinctions between RIS and PACS which starts being difficult (platform and cloud based architecture that merge functionalities).
-
-- Often top-down governmental actions are considered to drive uptake, thus lognitudinal analyis may offer insights needed to develop politicial strategies.
-
-- We published a similar analysis in of EHR diffusion dynamics in the International Journal of Medical Informatics
 
 ---
 layout: false
@@ -358,6 +338,18 @@ background-image: url(../img/logo-hs-os-kompakt.jpg), url(../img/logo-it-report.
 ---
 
 # Appendix
+
+---
+
+# Further Discussions 
+
+- Deeper insights possible with longitudianal analysis and possibly more reliant, however data is harder to obtain.
+
+- We made clear distinctions between RIS and PACS which starts being difficult (platform and cloud based architecture that merge functionalities).
+
+- Often top-down governmental actions are considered to drive uptake, thus lognitudinal analyis may offer insights needed to develop politicial strategies.
+
+- We published a similar analysis in of EHR diffusion dynamics in the International Journal of Medical Informatics.
 
 ---
 
